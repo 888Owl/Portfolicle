@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello Owl!</title>
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+  <script type="text/javascript" src=jquery-3.3.1.js>
+
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Orbitron" rel="stylesheet">
+
+  <script type="text/javascript" src="main.js">
+
+  </script>
+</head>
+
+<body>
+
+
+
+  <div class="background-margin">
+
+    <h1>Sam Swift</h1>
+    <h3><button onclick="pastTog()">Projects i have completed to date.</button></h3>
+    <div id="past-div" style="display:none;">
+
+      <button onclick="quoteTog()">Quote Machine</button>
+
+      <div id="quote-box" style="display:none;">
+        <div class="liquidContainer">
+          <div class="header" id="top">
+            <p id="me">This is my random quote generator a project i worked on through<a href="https://about.freecodecamp.org/" target="_blank"> freeCodeCamp.</a>
+          </div>
+          <div class="generator" id="center">
+            <button class="btn" , "btn-default" id="generateMe" type="submit"> Random</button></div>
+          <div class="remember">
+            <span class="quote"> "好折凳！折凳的奧妙之處，它可以藏在民居之中，隨手可得，還可以坐著它來隱藏殺機，就算被警察抓了也告不了你，真不愧為七種武器之首!"</span>
+            <span class="author"> - 食神</span>
+
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+
+      <button onclick="fluidTog()">WikiPedia SearchBar</button>
+      <div style="display:none;" id="fluid-tog" class="fluidContainer">
+        <div class="wiki-box">
+
+        <div class="header">
+          <h1>WikiPedia Search-Bar</h1>
+          <h3>A project through <a href="https://about.freecodecamp.org/" target="_blank"> freeCodeCamp.</a></h3>
+        </div>
+        <div class="form-box">
+          <form action='#reciever'>
+            <button class="portal"><a href="https://en.wikipedia.org/wiki/Special:Random" target="blank">Random</a></button>
+            <input type='text' placeholder='Wiki Search' id='search-bar' name='wiki-s'>
+            <input type='submit' value='Search' id='search-button'>
+          </form>
+        </div>
+        <div class="return-body">
+          <ul class="wiki-ul" id='reciever'>
+
+          </ul>
+        </div>
+        </div>
+      </div>
+
+
+<br>
+    <button onclick="weatherTog()">Your Local Weather</button>
+    <div style="display:none;" id="weather-tog" class="owl">
+
+      <div class="weatherBox">
+
+        <div class="inner-fluid-container">
+          <div class="local-weather">
+            <div class="icon">
+
+            </div>
+            <div class="weather">
+
+              <p id="weather">weather</p>
+            </div>
+            <div class="location">
+              <p id="location">location</p>
+            </div>
+            <div class="display">
+              <a id="display"></a>
+            </div>
+            <div class="temperature">
+              <button class="btn btn-default" id="temperature">C/F</button>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+    <h3><button onclick="langTog()">Languages I currently build with.</button></h3>
+    <div id="lang-div" style="display:none;">
+      <ul>
+        <li>JavaScript</li>
+        <li>CSS</li>
+        <li>HTML</li>
+      </ul>
+    </div>
+    <h3><button onclick="nextLang()">Languages I intend to learn more about and build with.</button></h3>
+    <div id="next-lang" style="display:none;">
+      <ul>
+        <li>Ruby</li>
+        <li>React</li>
+        <li>HelmetJS</li>
+        <li>MongoDB</li>
+      </ul>
+    </div>
+    <div class="resources-div">
+      <h3>Resources i have utilized to learn more about javascript</h3>
+      <a class="f-c-c" href="https://www.freecodecamp.org/888owl" target="_blank">freeCodeCamp</a>
+      <a href="https://www.codewars.com/users/888Owl">Codewars</a>
+      <a href="https://github.com/getify/You-Dont-Know-JS">You Don't Know JS</a>
+    <div id="foot-div">
+      <h3>Libraries I have worked with.</h3>
+      <a href="http://jquery.com/">jQuery</a>
+      <a href="https://getbootstrap.com/">Bootstrap</a>
+    </div>
+  </div>
+</body>
+
+</html>
