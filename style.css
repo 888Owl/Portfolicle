@@ -4,9 +4,10 @@ body {
   font-family: 'ZCOOL QingKe HuangYou';
 }
 button {
-  border-radius: 20px, 40px, 20px, 40px;
-  color:rgb(30,60,90);
-  background-color: rgb(90,60,30);
+ 
+  border-radius: 5px, bold;
+   color:black;
+   background-color:white;}
 }
 h1 {
   color: rgb(25, 25, 45);
