@@ -5,7 +5,9 @@
   <title>Sam Swift</title>
   <meta charset="UTF-8">
   <link href="style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amiri|Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
   <script type="text/javascript" src=jquery-3.3.1.js>
 
   </script>
@@ -15,26 +17,35 @@
 
   </script>
 </head>
-
+<title>Sam Swift</title>
 <body>
 
 
 
-  <div class="background-margin">
+  
 
-    <h1>Sam Swift</h1>
-    <h3><button onclick="pastTog()">Projects i have completed to date.</button></h3>
-    <div id="past-div" style="display:none;">
+    <h1 id='name-place'>Sam Swift</h1>
+    <p id="word-place">They may not be ebony or ivory, but I use these keys with as much passion.</p>
 
-      <button onclick="quoteTog()">Quote Machine</button>
+<div class="second-background">
 
+    <div class="background-margin"></div>
+    <div id="past-div">
+        <div id="pre-historic"></div>
+
+      <button id="quote-but" onclick="quoteTog()">Quote Machine</button>
+      <button id="wiki-but" onclick="fluidTog()">Wikipedia Search</button>
+
+      <button id="weather-but" onclick="weatherTog()">Your Local Weather</button>
+
+<div class='projects'>
       <div id="quote-box" style="display:none;">
         <div class="liquidContainer">
           <div class="header" id="top">
             <p id="me">This is my random quote generator a project i worked on through<a href="https://about.freecodecamp.org/" target="_blank"> freeCodeCamp.</a>
           </div>
           <div class="generator" id="center">
-            <button class="btn" , "btn-default" id="generateMe" type="submit"> Random</button></div>
+            <button class="rano-but" id="generateMe" type="submit"> Random</button></div>
           <div class="remember">
             <span class="quote"> "好折凳！折凳的奧妙之處，它可以藏在民居之中，隨手可得，還可以坐著它來隱藏殺機，就算被警察抓了也告不了你，真不愧為七種武器之首!"</span>
             <span class="author"> - 食神</span>
@@ -44,14 +55,11 @@
         </div>
       </div>
 
-      <br>
-
-      <button onclick="fluidTog()">WikiPedia SearchBar</button>
-      <div style="display:none;" id="fluid-tog" class="fluidContainer">
+<div style="display:none;" id="fluid-tog" class="fluidContainer">
         <div class="wiki-box">
 
         <div class="header">
-          <h1>WikiPedia Search-Bar</h1>
+          <h1>Wikipedia Search</h1>
           <h3>A project through <a href="https://about.freecodecamp.org/" target="_blank"> freeCodeCamp.</a></h3>
         </div>
         <div class="form-box">
@@ -69,9 +77,6 @@
         </div>
       </div>
 
-
-<br>
-    <button onclick="weatherTog()">Your Local Weather</button>
     <div style="display:none;" id="weather-tog" class="owl">
 
       <div class="weatherBox">
@@ -105,39 +110,38 @@
 
     </div>
   </div>
+</div>
 
-
-    <h3><button onclick="langTog()">Languages I currently build with.</button></h3>
-    <div id="lang-div" style="display:none;">
-      <ul>
-        <li>JavaScript</li>
-        <li>CSS</li>
-        <li>HTML</li>
-      </ul>
+    <div id="lang-div">
+      <div class='languages'>
+        <p>Html</p><div class='container'><div class='skills html'>80%</div></div>
+        <p>CSS</p><div class='container'><div class='skills css'>70%</div></div>
+        <p>javascript</p><div class="container">
+            <div class="skills js">65%</div>
+          </div>
+        <p>jQuery</p><div class='container'><div class='skills jquery'>50%</div></div>
+        <p>React</p><div class='container'><div class='skills react'>30%</div></div>
     </div>
-    <h3><button onclick="nextLang()">Languages I intend to learn more about and build with.</button></h3>
-    <div id="next-lang" style="display:none;">
-      <ul>
-        <li>Ruby</li>
-        <li>React</li>
-        <li>HelmetJS</li>
-        <li>MongoDB</li>
-        <li>Swift</li>
-      </ul>
     </div>
+    
     <div class="resources-div">
-      <h3>Resources I have utilized to learn more about JavaScript</h3>
+      <h3>Resources I have utilized to learn more about web developement</h3>
       <a class="f-c-c" href="https://www.freecodecamp.org/888owl" target="_blank">freeCodeCamp</a>
       <a target="_blank" href="https://www.codewars.com/users/888Owl">Codewars</a>
       <a target="_blank" href="https://github.com/getify/You-Dont-Know-JS">You Don't Know JS</a>
       <a target="_blank" href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
-    <div id="foot-div">
-      <h3>Libraries I have worked with.</h3>
-      <a target="_blank" href="http://jquery.com/">jQuery</a>
-      <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a>
-    </div>
-      <h3>Contact me here via <a href="mailto:87daysofsam@gmail.com?">email.</a></h3>
+      <a target="_blank" href="https://scrimba.com">Scrimba</a>
+    
+      <form class="form-handle" method="post" data-netlify="true">
+        <label for="name">Name: </label><input type="name" name="name"/> <br/>
+        <label for="email">Email:</label><input type="email" name="email"/><br/>
+        <label for="line">Line: </label><input type="text" name="line"/><br/>
+        <label for="message">Message:</label><br/>
+        <textarea type="text" name="message" cols="30" rows="5"></textarea><br/>
+        <input type="submit" name="submit"/>
+      </form>
   </div>
+</div>
 </body>
 
 </html>

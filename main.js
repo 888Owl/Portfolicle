@@ -1,29 +1,7 @@
-function pastTog() {
-  let x = document.getElementById("past-div");
-  if (x.style.display === 'none') {
-    return x.style.display = 'block';
-  } else {
-    return x.style.display = 'none';
-  }
-}
+if ("geolocation" in navigator) {
+console.log("yes") } else {
+console.log("no")}
 
-function langTog() {
-  let y = document.getElementById("lang-div");
-  if (y.style.display === 'none') {
-    return y.style.display = 'block';
-  } else {
-    return y.style.display = 'none';
-  }
-}
-
-function nextLang() {
-  let z = document.getElementById("next-lang");
-  if (z.style.display === 'none') {
-    return z.style.display = 'block';
-  } else {
-    return z.style.display = 'none';
-  }
-}
 
 function fluidTog() {
   let f = document.getElementById("fluid-tog");
@@ -172,7 +150,7 @@ $(document).ready(function() {
   navigator.geolocation.getCurrentPosition(function(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
-    var api = "https://fcc-weather-api.glitch.me/api/current?lat=" + latitude + "&lon=" + longitude;
+    var api = "https://api.darksky.net/forecast/a1a2208117dfe995abb0198860bb6790/"+ latitude +","+longitude+"?units=si&exclude=minutely,hourly,daily,alerts";
     $.getJSON(api, function(data) {
       var tempBut = false;
       var icon = data.weather[0].icon;
