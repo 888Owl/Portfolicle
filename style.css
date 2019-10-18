@@ -1,6 +1,10 @@
 /*////////////
 GLOBAL SELECTORS
 ////////////*/
+*{
+  margin: 0;
+  padding:0;
+}
 @media (max-width: 890px){
   body{
   background-image:url("https://i.ibb.co/LvsDTPV/2990-AE31-7566-4-EB2-9445-6-EC24256997-A.jpg");
@@ -319,4 +323,13 @@ FORM SELECTORS
 
 .form-handle{
   margin-top:100px;
+}
+/*
+FOOTER SELECTORS
+*/
+
+footer{
+  margin-top: 10%;
+  background:white;
+  height: 10%;
 }
