@@ -1,6 +1,3 @@
-<script>
-  AOS.init();
-</script>
 if ("geolocation" in navigator) {
 console.log("yes") } else {
 console.log("no")}
