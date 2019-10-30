@@ -126,6 +126,7 @@ $(document).ready(function() {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
     var api = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/a1a2208117dfe995abb0198860bb6790/"+ latitude +","+longitude+"?units=si&exclude=minutely,hourly,daily,alerts";
+    origin:"https://www.terminowl.com/index.html";
     $.getJSON(api, function(data) {
       
       var tempBut = false;
