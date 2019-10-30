@@ -129,11 +129,11 @@ $(document).ready(function() {
 
 $.getJSON(api, function(data) {
       var tempBut = false;
-      var weather = data.weather.description;
+      var weather = data[0].weather.description;
       $("#weather").html(weather);
-      var location = data.city_name;
+      var location = data[0].city_name;
       $("#location").html(location);
-      var temperatureC = data.temp;
+      var temperatureC = data[0].temp;
       var temperatureF = temperatureC * 9 / 5 + 32;
       var c = Math.floor(temperatureC);
       var f = Math.floor(temperatureF);
