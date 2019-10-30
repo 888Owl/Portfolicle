@@ -111,46 +111,46 @@ $(document).ready(function() {
 
   });
 });
-//
-//
-//end wikipedia searchbar code
-//
-//
-//start Weather app space
-//
-///*
-//var latitude;
-//var longitude;
-//$(document).ready(function() {
-//  navigator.geolocation.getCurrentPosition(function(position) {
-//    var latitude = position.coords.latitude;
-//    var longitude = position.coords.longitude;
-//    var api = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/a1a2208117dfe995abb0198860bb6790/"+ latitude +","+longitude+"?units=si&exclude=minutely,hourly,daily,alerts";
-//    $.getJSON(api, function(data) {
-//      
-//      var tempBut = false;
-//      var icon = data.weather[0].icon;
-//      var weather = data.weather[0].description;
-//      $("#weather").html(weather);
-//      var location = data.name;
-//      $("#location").html(location);
-//      var temperatureC = data.main.temp;
-//      var temperatureF = temperatureC * 9 / 5 + 32;
-//      var c = Math.floor(temperatureC);
-//      var f = Math.floor(temperatureF);
-//      var cTemp = "°Celcius";
-//      var fTemp = "°Fahrenheit";
-//      $(".icon").html('<img src=' + icon + '>');
-  //    $("#display").html(c + cTemp);
-//      $("#temperature").click(function() {
-//        if (tempBut === true) {
-//          $("#display").html(c + cTemp);
-//          tempBut = false;
-//        } else {
-//          $("#display").html(f + fTemp);
-//          tempBut = true;
-//        }
-//      });
-//    });
-//  });
-//});
+
+
+end wikipedia searchbar code
+
+
+start Weather app space
+
+
+var latitude;
+var longitude;
+$(document).ready(function() {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    var api = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/a1a2208117dfe995abb0198860bb6790/"+ latitude +","+longitude+"?units=si&exclude=minutely,hourly,daily,alerts";
+    $.getJSON(api, function(data) {
+      
+      var tempBut = false;
+      var icon = data.weather[0].icon;
+      var weather = data.weather[0].description;
+      $("#weather").html(weather);
+      var location = data.name;
+      $("#location").html(location);
+      var temperatureC = data.main.temp;
+      var temperatureF = temperatureC * 9 / 5 + 32;
+      var c = Math.floor(temperatureC);
+      var f = Math.floor(temperatureF);
+      var cTemp = "°Celcius";
+      var fTemp = "°Fahrenheit";
+      $(".icon").html('<img src=' + icon + '>');
+      $("#display").html(c + cTemp);
+      $("#temperature").click(function() {
+        if (tempBut === true) {
+          $("#display").html(c + cTemp);
+          tempBut = false;
+        } else {
+          $("#display").html(f + fTemp);
+          tempBut = true;
+        }
+      });
+    });
+  });
+});
