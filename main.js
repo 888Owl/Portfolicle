@@ -128,7 +128,6 @@ $(document).ready(function() {
     var api = "https://api.weatherbit.io/v2.0/current?lat="+ latitude +"&lon="+longitude+"&key=d966d0f9f9b44ed48df9e2073cd18c4e";
 
 $.getJSON(api, function(data) {
-      alert(api);
       var tempBut = false;
       var weather = data.weather.description;
       $("#weather").html(weather);
