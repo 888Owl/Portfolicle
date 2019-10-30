@@ -201,6 +201,7 @@ RANDOM QUOTE MACHINE SELECTORS
 WIKI SEARCH SELECTORS
 ////////////*/
 #fluid-tog{
+  margin-top:5%;
 grid-area: flut;
 }
 
@@ -304,30 +305,35 @@ LANGUAGE/LIBRARY SELECTORS
 }
 
 .html {
+  font-weight: bold;
   width: 80%;
   background-color: black;
   margin-bottom:7%;
 }
 
 .css {
+  font-weight: bold;
   width: 70%;
   background-color: black;
   margin-bottom:7%;
 }
 
 .js {
+  font-weight: bold;
   width: 65%;
   background-color: black;
   margin-bottom:7%;
 }
 
 .jquery {
+  font-weight: bold;
   width: 50%;
   background-color: black;
   margin-bottom:7%;
 }
 
 .react {
+  font-weight: bold;
   width: 30%;
   background-color: black;
 }
