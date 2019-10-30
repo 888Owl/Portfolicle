@@ -113,10 +113,10 @@ $(document).ready(function() {
 });
 
 
-end wikipedia searchbar code
+/////////end wikipedia searchbar code
 
 
-start Weather app space
+/////////start Weather app space
 
 
 var latitude;
