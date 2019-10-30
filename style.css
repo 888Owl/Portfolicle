@@ -5,6 +5,10 @@ GLOBAL SELECTORS
   margin: 0;
   padding:0;
 }
+a{
+  text-decoration: none;
+
+}
 @media (max-width: 890px){
   body{
   background-image:url("https://i.ibb.co/LvsDTPV/2990-AE31-7566-4-EB2-9445-6-EC24256997-A.jpg");
@@ -62,6 +66,16 @@ form {
 /*////////////
 HEADER SELECTORS
 ////////////*/
+.navBar{
+  font-weight: bolder;
+  margin:1%;
+  font-size: 1.5em;
+  color:black;
+  padding:1%;
+  display:block;
+  position: fixed;
+}
+
 #header-wrap{
   padding-top:25%;
   background-color: white;
@@ -77,7 +91,7 @@ HEADER SELECTORS
   margin:auto;
   font-size: 1.8em;
   padding-bottom:25%;
-  margin-bottom:50%;
+  margin-bottom:35%;
 }
 /*////////////
 PROJECT SELECTORS
@@ -295,21 +309,25 @@ LANGUAGE/LIBRARY SELECTORS
 .html {
   width: 80%;
   background-color: black;
+  margin-bottom:7%;
 }
 
 .css {
   width: 70%;
   background-color: black;
+  margin-bottom:7%;
 }
 
 .js {
   width: 65%;
   background-color: black;
+  margin-bottom:7%;
 }
 
 .jquery {
   width: 50%;
   background-color: black;
+  margin-bottom:7%;
 }
 
 .react {
@@ -320,7 +338,11 @@ LANGUAGE/LIBRARY SELECTORS
 /*
 FORM SELECTORS
 */
-
+.contact-submit{
+margin:auto;
+width:33%;
+background-color:rgba(255,255,255,0.5);
+}
 .form-handle{
   margin-top:100px;
 }
