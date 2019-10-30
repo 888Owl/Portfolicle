@@ -119,26 +119,31 @@ $(document).ready(function() {
 /////////start Weather app space
 
 
-var latitude;
-var longitude;
+let latitude;
+let longitude;
 $(document).ready(function() {
   navigator.geolocation.getCurrentPosition(function(position) {
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
-    var api = "https://api.weatherbit.io/v2.0/current?lat="+ latitude +"&lon="+longitude+"&key=d966d0f9f9b44ed48df9e2073cd18c4e";
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let api =
+      "https://api.weatherbit.io/v2.0/current?lat=" +
+      latitude +
+      "&lon=" +
+      longitude +
+      "&key=d966d0f9f9b44ed48df9e2073cd18c4e";
 
-$.getJSON(api, function(data) {
-      var tempBut = false;
-      var weather = data[0].weather.description;
+    $.getJSON(api, function(data) {
+      let tempBut = false;
+      let weather = data.data[0].weather.description;
       $("#weather").html(weather);
-      var location = data[0].city_name;
+      let location = data.data[0].city_name;
       $("#location").html(location);
-      var temperatureC = data[0].temp;
-      var temperatureF = temperatureC * 9 / 5 + 32;
-      var c = Math.floor(temperatureC);
-      var f = Math.floor(temperatureF);
-      var cTemp = "°Celcius";
-      var fTemp = "°Fahrenheit";
+      let temperatureC = data.data[0].temp;
+      let temperatureF = temperatureC * 9 / 5 + 32;
+      let c = Math.floor(temperatureC);
+      let f = Math.floor(temperatureF);
+      let cTemp = "°Celcius";
+      let fTemp = "°Fahrenheit";
       $("#display").html(c + cTemp);
       $("#temperature").click(function() {
         if (tempBut === true) {
