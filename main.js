@@ -125,23 +125,21 @@ $(document).ready(function() {
   navigator.geolocation.getCurrentPosition(function(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
-    var api = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/a1a2208117dfe995abb0198860bb6790/"+ latitude +","+longitude+"?units=si&exclude=minutely,hourly,daily,alerts";
-    origin:"https://www.terminowl.com/index.html";
-    $.getJSON(api, function(data) {
-      
+    var api = "https://api.weatherbit.io/v2.0/current?lat="+ latitude +"&lon="+longitude+"&key=d966d0f9f9b44ed48df9e2073cd18c4e";
+
+$.getJSON(api, function(data) {
+      alert(api);
       var tempBut = false;
-      var icon = data.weather[0].icon;
-      var weather = data.weather[0].description;
+      var weather = data.weather.description;
       $("#weather").html(weather);
-      var location = data.name;
+      var location = data.city_name;
       $("#location").html(location);
-      var temperatureC = data.main.temp;
+      var temperatureC = data.temp;
       var temperatureF = temperatureC * 9 / 5 + 32;
       var c = Math.floor(temperatureC);
       var f = Math.floor(temperatureF);
       var cTemp = "°Celcius";
       var fTemp = "°Fahrenheit";
-      $(".icon").html('<img src=' + icon + '>');
       $("#display").html(c + cTemp);
       $("#temperature").click(function() {
         if (tempBut === true) {
