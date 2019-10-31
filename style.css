@@ -7,6 +7,7 @@ GLOBAL SELECTORS
 }
 a{
   text-decoration: none;
+  color: black;
 
 }
 @media (max-width: 890px){
@@ -75,7 +76,16 @@ HEADER SELECTORS
   display:block;
   position: fixed;
 }
-
+#nav-button{
+  padding:2%;
+  background-color:black;
+  font-size: 1em;
+  color:white;
+}
+#navBar-hide{
+  background-color:rgba(0,0,0,0.5);
+  color:white;
+}
 #header-wrap{
   padding-top:25%;
   background-color: white;
@@ -180,6 +190,8 @@ RANDOM QUOTE MACHINE SELECTORS
 
 .rando-but{
   text-decoration: none;
+  width:25%;
+  height:15%;
 }
 
 .remember {
@@ -221,7 +233,9 @@ grid-area: flut;
 /*////////////
 WEATHER APP SELECTORS
 ////////////*/
-
+#weather-header{
+  grid-area:wehe;
+}
 #weather-tog{
   grid-area: weat;
 }
@@ -234,7 +248,7 @@ WEATHER APP SELECTORS
   grid-auto-rows: minmax(87px auto);
   grid-gap: 10px;
   grid-template-areas:
-    "... ... ..."
+    "... wehe ..."
     "... we ..."
     "... ... ...";
 }
