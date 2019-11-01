@@ -1,8 +1,3 @@
-if ("geolocation" in navigator) {
-console.log("yes") } else {
-console.log("no")};
-
-let $;
 
 //quote machine js
 
@@ -61,7 +56,7 @@ $(document).ready(function() {
   $("#generateMe").on("click", function() {
     quoteMe();
   });
-});
+});(jQuery);
 //end quote machine js
 //
 //
