@@ -1,6 +1,6 @@
 if ("geolocation" in navigator) {
 console.log("yes") } else {
-console.log("no")}
+console.log("no")};
 
 let $;
 
