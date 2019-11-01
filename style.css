@@ -1,36 +1,35 @@
 /*////////////
 GLOBAL SELECTORS
 ////////////*/
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
-a{
+a {
   text-decoration: none;
   color: black;
+}
+@media (max-width: 890px) {
+  body {
+    background-image: url("https://i.ibb.co/LvsDTPV/2990-AE31-7566-4-EB2-9445-6-EC24256997-A.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Abel", sans-serif;
+    line-height: 1.3;
+    text-align: center;
+  }
+}
 
-}
-@media (max-width: 890px){
-  body{
-  background-image:url("https://i.ibb.co/LvsDTPV/2990-AE31-7566-4-EB2-9445-6-EC24256997-A.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size:cover;
-  font-family: 'Abel', sans-serif;
-  line-height: 1.3;
-  text-align: center;
-}
-}
-
-@media (min-width: 900px){
-body {
-  background-image:url("https://i.ibb.co/LvsDTPV/2990-AE31-7566-4-EB2-9445-6-EC24256997-A.jpg");
-  background-attachment: fixed;
-  background-size:100%;
-  font-family: 'Abel', sans-serif;
-  line-height: 1.3;
-  text-align: center;
-}
+@media (min-width: 900px) {
+  body {
+    background-image: url("https://i.ibb.co/LvsDTPV/2990-AE31-7566-4-EB2-9445-6-EC24256997-A.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: "Abel", sans-serif;
+    line-height: 1.3;
+    text-align: center;
+  }
 }
 
 button {
@@ -67,89 +66,89 @@ form {
 /*////////////
 HEADER SELECTORS
 ////////////*/
-.navBar{
+.navBar {
   font-weight: bolder;
-  margin:1%;
+  margin: 1%;
   font-size: 1.5em;
-  color:black;
-  padding:1%;
-  display:block;
+  color: black;
+  padding: 1%;
+  display: block;
   position: fixed;
 }
-#nav-button{
-  padding:2%;
-  background-color:black;
+#nav-button {
+  padding: 2%;
+  background-color: black;
   font-size: 1em;
-  color:white;
+  color: white;
 }
-#navBar-hide{
-  background-color:rgba(0,0,0,0.5);
-  color:white;
+#navBar-hide {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
-#header-wrap{
-  padding-top:25%;
+#header-wrap {
+  padding-top: 25%;
   background-color: white;
 }
 
-#name-place{
-  margin:auto;
-  font-family: 'Lobster', serif;
+#name-place {
+  margin: auto;
+  font-family: "Lobster", serif;
   font-size: 3.5em;
 }
 
-#word-place{
-  margin:auto;
+#word-place {
+  margin: auto;
   font-size: 1.8em;
-  padding-bottom:25%;
-  margin-bottom:35%;
+  padding-bottom: 25%;
+  margin-bottom: 35%;
 }
 /*////////////
 PROJECT SELECTORS
 ////////////*/
-@media (max-width: 890px){
-.background-margin {
-  background-color: rgb(230, 230, 230);
-}
+@media (max-width: 890px) {
+  .background-margin {
+    background-color: rgb(230, 230, 230);
+  }
 }
 
-@media (min-width: 900px){
+@media (min-width: 900px) {
   .background-margin {
     margin-left: 25%;
     margin-right: 25%;
     background-color: rgb(230, 230, 230);
   }
-  }
-
-#past-div {
-  width:100%;
 }
 
-#pre-historic{
-  grid-area:pre;
+#past-div {
+  width: 100%;
+}
+
+#pre-historic {
+  grid-area: pre;
   padding: 10px;
   display: grid;
   grid-auto-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(87px auto);
   grid-gap: 40px;
   grid-template-areas:
-  "... quob ..."
-  "... flut ..."
-  "... weat ...";
+    "... quob ..."
+    "... flut ..."
+    "... weat ...";
 }
 
-#project-wrap{
-  padding-top:15%;
-  padding-bottom:15%;
-  background-color:white;
-  width:100%;
+#project-wrap {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  background-color: white;
+  width: 100%;
 }
 
 /*////////////
 RANDOM QUOTE MACHINE SELECTORS
 ////////////*/
-#quote-box{
-  margin-right:25%;
-  margin-left:25%; 
+#quote-box {
+  margin-right: 25%;
+  margin-left: 25%;
   grid-area: quob;
   text-align: center;
 }
@@ -177,7 +176,7 @@ RANDOM QUOTE MACHINE SELECTORS
 
 #me {
   text-align: center;
-  margin-top:5%;
+  margin-top: 5%;
   padding: 25px 25px 25px 25px;
 }
 
@@ -186,10 +185,10 @@ RANDOM QUOTE MACHINE SELECTORS
   text-align: center;
 }
 
-.rando-but{
+.rando-but {
   text-decoration: none;
-  width:25%;
-  height:15%;
+  width: 25%;
+  height: 15%;
 }
 
 .remember {
@@ -210,10 +209,10 @@ RANDOM QUOTE MACHINE SELECTORS
 /*////////////
 WIKI SEARCH SELECTORS
 ////////////*/
-#fluid-tog{
-  margin-top:5%;
-grid-area: flut;
-margin-bottom: 5%;
+#fluid-tog {
+  margin-top: 5%;
+  grid-area: flut;
+  margin-bottom: 5%;
 }
 
 .wiki-box {
@@ -232,16 +231,16 @@ margin-bottom: 5%;
 /*////////////
 WEATHER APP SELECTORS
 ////////////*/
-#weather-header{
-  grid-area:wehe;
+#weather-header {
+  grid-area: wehe;
 }
-#weather-tog{
+#weather-tog {
   grid-area: weat;
 }
 
 .owl {
-  margin-right:25%;
-  margin-left:25%;
+  margin-right: 25%;
+  margin-left: 25%;
   display: grid;
   grid-auto-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(87px auto);
@@ -283,20 +282,19 @@ GENERAL INFO/RESOURCES OF CONTACT SELECTORS
 */
 
 .resources-div {
-  margin-top:25%;
-  background-color:white;
+  margin-top: 25%;
+  background-color: white;
   padding: 10px;
   grid-area: rd;
 }
 
-
 /*
 LANGUAGE/LIBRARY SELECTORS
 */
-#lang-wrap{
-  background-color:white;
-  margin-top:50%;
-  width:100%;
+#lang-wrap {
+  background-color: white;
+  margin-top: 50%;
+  width: 100%;
 }
 #lang-div {
   padding: 10px;
@@ -321,28 +319,28 @@ LANGUAGE/LIBRARY SELECTORS
   font-weight: bold;
   width: 80%;
   background-color: black;
-  margin-bottom:7%;
+  margin-bottom: 7%;
 }
 
 .css {
   font-weight: bold;
   width: 70%;
   background-color: black;
-  margin-bottom:7%;
+  margin-bottom: 7%;
 }
 
 .js {
   font-weight: bold;
   width: 65%;
   background-color: black;
-  margin-bottom:7%;
+  margin-bottom: 7%;
 }
 
 .jquery {
   font-weight: bold;
   width: 50%;
   background-color: black;
-  margin-bottom:7%;
+  margin-bottom: 7%;
 }
 
 .react {
@@ -354,22 +352,20 @@ LANGUAGE/LIBRARY SELECTORS
 /*
 FORM SELECTORS
 */
-.contact-submit{
-margin:auto;
-width:33%;
-background-color:rgba(255,255,255,0.5);
+.contact-submit {
+  margin: auto;
+  width: 33%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-.form-handle{
-  margin-top:100px;
+.form-handle {
+  margin-top: 100px;
 }
 /*
 FOOTER SELECTORS
 */
 
-footer{
+footer {
   margin-top: 10%;
-  background:white;
+  background: white;
   height: 10%;
 }
-
-
