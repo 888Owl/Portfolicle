@@ -1,7 +1,8 @@
 if ("geolocation" in navigator) {
-console.log("yes") } else {
-console.log("no")}
-
+  console.log("yes");
+} else {
+  console.log("no");
+}
 
 ///////////navbar hide
 ////////
@@ -17,7 +18,6 @@ console.log("no")}
 //
 //
 //quote machine js
-
 
 $(document).ready(function() {
   function quoteMe() {
@@ -84,9 +84,6 @@ $(document).ready(function() {
 //
 //
 $(document).ready(function() {
-
-
-
   $("form").submit(function(e) {
     e.preventDefault();
     var message = $("#search-bar").val();
@@ -97,14 +94,22 @@ $(document).ready(function() {
 
     $.ajax({
       url: url,
-      dataType: 'json',
-      type: 'GET',
+      dataType: "json",
+      type: "GET",
       async: true,
       success: function(data) {
-        $('#reciever').empty();
+        $("#reciever").empty();
         for (var i = 0; i < data[1].length; i++) {
-          $('#reciever').append("<li><a href= " + data[3][i] + ">" + data[1][i] + "</a><p>" + data[2][i] + "</p></li><hr>");
-        };
+          $("#reciever").append(
+            "<li><a href= " +
+              data[3][i] +
+              ">" +
+              data[1][i] +
+              "</a><p>" +
+              data[2][i] +
+              "</p></li><hr>"
+          );
+        }
         $("#search-bar").val(" ");
       },
       error: function(errorMessage) {
@@ -116,16 +121,12 @@ $(document).ready(function() {
         $("#search-bar").click();
       }
     });
-
   });
 });
 
-
 /////////end wikipedia searchbar code
 
-
 /////////start Weather app space
-
 
 let latitude;
 let longitude;
