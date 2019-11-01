@@ -3,19 +3,7 @@ console.log("yes") } else {
 console.log("no")}
 
 
-///////////navbar hide
-////////
-////
-//function menuClick(){
-//  let n = document.getElementById("navBar-hide");
-//  if(n.style.display === "none"){
-//    return n.style.display //= "block"
-//}// else return n.style.display = "none"
-//}
-//
-//
-//
-//
+
 //quote machine js
 
 
