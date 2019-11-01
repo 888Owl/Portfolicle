@@ -2,7 +2,7 @@ if ("geolocation" in navigator) {
 console.log("yes") } else {
 console.log("no")}
 
-
+let $;
 
 //quote machine js
 
