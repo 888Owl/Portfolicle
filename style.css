@@ -156,7 +156,6 @@ RANDOM QUOTE MACHINE SELECTORS
 
 .liquidContainer {
   text-align: center;
-  background-color: teal;
   display: grid;
   grid-auto-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(87px auto);
@@ -177,7 +176,6 @@ RANDOM QUOTE MACHINE SELECTORS
 }
 
 #me {
-  background-color: turquoise;
   text-align: center;
   margin-top:5%;
   padding: 25px 25px 25px 25px;
@@ -215,6 +213,7 @@ WIKI SEARCH SELECTORS
 #fluid-tog{
   margin-top:5%;
 grid-area: flut;
+margin-bottom: 5%;
 }
 
 .wiki-box {
@@ -372,3 +371,5 @@ footer{
   background:white;
   height: 10%;
 }
+
+
