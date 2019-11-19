@@ -320,6 +320,7 @@ MOBILE VIEW OF THE WEATHER APP
 }
 @media (max-width: 1080px){
 .cels-fehr{
+  padding-top:10px;
   font-size: 1.5em;
 }
 }
