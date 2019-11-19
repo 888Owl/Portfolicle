@@ -399,6 +399,7 @@ LANGUAGE/LIBRARY SELECTORS
   font-weight: bold;
   width: 30%;
   background-color: black;
+  margin-bottom: 7%;
 }
 
 .vue {
