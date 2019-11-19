@@ -9,7 +9,12 @@ a {
   text-decoration: none;
   color: black;
 }
-@media (max-width: 890px) {
+@media (max-width: 1080px){
+  button {
+    padding-top:10px;
+  }
+  }
+@media (max-width: 1080px) {
   body {
     background-image: url("https://i.ibb.co/LvsDTPV/2990-AE31-7566-4-EB2-9445-6-EC24256997-A.jpg");
     background-attachment: fixed;
@@ -21,7 +26,7 @@ a {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   body {
     background-image: url("https://i.ibb.co/LvsDTPV/2990-AE31-7566-4-EB2-9445-6-EC24256997-A.jpg");
     background-attachment: fixed;
@@ -319,11 +324,11 @@ MOBILE VIEW OF THE WEATHER APP
   padding-bottom: 15px;
 }
 @media (max-width: 1080px){
-.cels-fehr{
-  padding-top:10px;
-  font-size: 1.5em;
-}
-}
+  .cels-fehr{
+    padding-top:10px;
+    font-size: 1.5em;
+  }
+  }
 /*
 GENERAL INFO/RESOURCES OF CONTACT SELECTORS
 */
