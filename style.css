@@ -401,6 +401,11 @@ LANGUAGE/LIBRARY SELECTORS
   background-color: black;
 }
 
+.vue {
+  font-weight: bold;
+  width: 30%;
+  background-color: black;
+}
 /*
 FORM SELECTORS
 */
