@@ -155,7 +155,7 @@ RANDOM QUOTE MACHINE SELECTORS
 /*
 DESKTOP VIEW FOR QUOTE MACHINE
 */
-@media (min-width: 900px){
+@media (min-width: 1100px){
 .liquidContainer {
   text-align: center;
   display: grid;
@@ -175,7 +175,7 @@ DESKTOP VIEW FOR QUOTE MACHINE
 /*
 MOBILE VIEW FOR QUOTE MACHINE
 */
-@media (max-width: 900px){
+@media (max-width: 1000px){
   .liquidContainer {
     text-align: center;
     display: grid;
