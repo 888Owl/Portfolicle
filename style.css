@@ -175,13 +175,14 @@ DESKTOP VIEW FOR QUOTE MACHINE
 /*
 MOBILE VIEW FOR QUOTE MACHINE
 */
-@media (min-width: 900px){
+@media (max-width: 900px){
   .liquidContainer {
     text-align: center;
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: minmax(87px auto);
     grid-gap: 25px;
+    font-size: 2em;
     grid-template-areas:
       " head"
       "gen"
