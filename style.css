@@ -152,7 +152,10 @@ RANDOM QUOTE MACHINE SELECTORS
   grid-area: quob;
   text-align: center;
 }
-
+/*
+DESKTOP VIEW FOR QUOTE MACHINE
+*/
+@media (min-width: 900px){
 .liquidContainer {
   text-align: center;
   display: grid;
@@ -168,7 +171,24 @@ RANDOM QUOTE MACHINE SELECTORS
     "... ... ..."
     "... foot ...";
 }
-
+}
+/*
+MOBILE VIEW FOR QUOTE MACHINE
+*/
+@media (min-width: 900px){
+  .liquidContainer {
+    text-align: center;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: minmax(87px auto);
+    grid-gap: 25px;
+    grid-template-areas:
+      " head"
+      "gen"
+      "re"
+      "foot ";
+  }
+  }
 .header {
   grid-area: head;
   text-align: center;
