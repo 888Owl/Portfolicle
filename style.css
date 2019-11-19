@@ -175,7 +175,7 @@ DESKTOP VIEW FOR QUOTE MACHINE
 /*
 MOBILE VIEW FOR QUOTE MACHINE
 */
-@media (max-width: 1000px){
+@media (max-width: 1080px){
   .liquidContainer {
     text-align: center;
     display: grid;
