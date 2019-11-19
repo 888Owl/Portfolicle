@@ -318,6 +318,9 @@ MOBILE VIEW OF THE WEATHER APP
   grid-area: temp;
   padding-bottom: 15px;
 }
+.cels-fehr{
+  font-size: 2em;
+}
 /*
 GENERAL INFO/RESOURCES OF CONTACT SELECTORS
 */
